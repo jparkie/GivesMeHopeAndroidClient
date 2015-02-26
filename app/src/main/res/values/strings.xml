@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Anthology for Gives Me Hope</string>
+
+    <string name="action_submit">Submit</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_to_top">To Top</string>
+    <string name="action_disclaimer">Disclaimer</string>
+
+    <string name="fragment_title_hot">Hot</string>
+    <string name="fragment_title_trending">Trending</string>
+    <string name="fragment_title_vote">Vote</string>
+
+    <string name="toast_vote_success">Vote Success</string>
+    <string name="toast_vote_failure">Vote Failure</string>
+    <string name="toast_submit_error_title">Must Have a Title</string>
+    <string name="toast_submit_error_story">Must Have a Story More Than 10 Characters</string>
+    <string name="toast_submit_success">Success</string>
+    <string name="toast_submit_failure">Submission Failure</string>
+
+    <string name="submit_dialog_title">Submit</string>
+    <string name="submit_dialog_hint_name">Name</string>
+    <string name="submit_dialog_hint_location">Location</string>
+    <string name="submit_dialog_hint_title">Title</string>
+    <string name="submit_dialog_hint_category">Category</string>
+    <string name="submit_dialog_hint_story">Story</string>
+    <string name="submit_dialog_button_reset">Reset</string>
+    <string name="submit_dialog_button_submit">Submit</string>
+
+    <string name="disclaimer_dialog_title">Disclaimer</string>
+    <string name="disclaimer_dialog_text">This application was developed by an individual who does not have any affiliation with the content providers Gives Me Hope and affiliates. This application is for educational purposes only.</string>
+    <string name="disclaimer_button_text">Okay</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="?android:actionBarSize"
+    android:padding="@dimen/minimum_padding_unit"
+    android:gravity="center"
+    android:textSize="@dimen/typography_caption"
+    android:textStyle="bold"
+    android:background="?android:selectableItemBackground"
+    android:id="@android:id/text1"/>

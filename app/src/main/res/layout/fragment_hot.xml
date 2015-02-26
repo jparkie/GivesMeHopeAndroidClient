@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hotSwipeRefreshLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/cards_padding"
+            android:paddingRight="@dimen/cards_padding"
+            android:focusable="true"
+            android:id="@+id/hotRecyclerView" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/hotProgressBar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_error_white_48dp"
+        android:id="@+id/hotNetworkingErrorImageView" />
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="GMHTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/darkPrimaryColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Empty -->
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

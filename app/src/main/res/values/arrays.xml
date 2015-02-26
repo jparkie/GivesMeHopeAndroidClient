@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="submit_dialog_category_entry_names">
+        <item>Amazing Friends</item>
+        <item>Cute Kids</item>
+        <item>Inspiring Feats</item>
+        <item>Other</item>
+        <item>Potter</item>
+        <item>Random Acts of Kindness</item>
+    </string-array>
+    <string-array name="submit_dialog_category_entry_values">
+        <item>9</item>
+        <item>13</item>
+        <item>11</item>
+        <item>14</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_submit"
+        android:title="@string/action_submit"
+        android:icon="@mipmap/ic_add_white_24dp"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_refresh"
+        android:title="@string/action_refresh"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_to_top"
+        android:title="@string/action_to_top"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_disclaimer"
+        android:title="@string/action_disclaimer"
+        android:orderInCategory="4"
+        app:showAsAction="never" />
+</menu>

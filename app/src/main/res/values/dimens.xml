@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="minimum_padding_unit">4dp</dimen>
+    <dimen name="minimum_horizontal_padding">16dp</dimen>
+
+    <dimen name="cards_padding">8dp</dimen>
+    <dimen name="cards_gutter">8dp</dimen>
+    <dimen name="cards_content_padding">16dp</dimen>
+
+    <dimen name="dialog_vertical_padding">8dp</dimen>
+    <dimen name="dialog_content_padding">24dp</dimen>
+
+    <dimen name="vote_button_margin">16dp</dimen>
+
+    <!-- Light -->
+    <dimen name="typography_display_4">112sp</dimen>
+    <!-- Regular -->
+    <dimen name="typography_display_3">56sp</dimen>
+    <!-- Regular -->
+    <dimen name="typography_display_2">45sp</dimen>
+    <!-- Regular -->
+    <dimen name="typography_display_1">34sp</dimen>
+    <!-- Regular -->
+    <dimen name="typography_headline">24sp</dimen>
+    <!-- Medium -->
+    <dimen name="typography_title">20sp</dimen>
+    <!-- Regular -->
+    <dimen name="typography_subhead">16sp</dimen>
+    <!-- Medium -->
+    <dimen name="typography_body_2">14sp</dimen>
+    <!-- Regular -->
+    <dimen name="typography_body_1">14sp</dimen>
+    <!-- Regular -->
+    <dimen name="typography_caption">12sp</dimen>
+    <!-- Medium -->
+    <dimen name="typography_menu">14sp</dimen>
+    <!-- Medium (All Caps) -->
+    <dimen name="typography_button">14sp</dimen>
+
+</resources>

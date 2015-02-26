@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dialog_content_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/typography_title"
+        android:textStyle="bold"
+        android:text="@string/submit_dialog_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_vertical_padding"
+        android:overScrollMode="never"
+        android:fillViewport="true"
+        android:id="@+id/submitScrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:hint="@string/submit_dialog_hint_name"
+                android:inputType="textCapWords|textPersonName"
+                android:maxLength="@integer/submit_dialog_max_length_name"
+                android:id="@+id/submitNameEditText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_vertical_padding"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:hint="@string/submit_dialog_hint_location"
+                android:inputType="textCapWords|textPostalAddress"
+                android:maxLength="@integer/submit_dialog_max_length_location"
+                android:id="@+id/submitLocationEditText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_vertical_padding"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:hint="@string/submit_dialog_hint_title"
+                android:inputType="textCapSentences"
+                android:maxLength="@integer/submit_dialog_max_length_title"
+                android:id="@+id/submitTitleEditText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_vertical_padding"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:hint="@string/submit_dialog_hint_story"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="@integer/submit_dialog_max_length_story"
+                android:id="@+id/submitStoryEditText" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_vertical_padding"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/submit_dialog_category_entry_names"
+                android:entryValues="@array/submit_dialog_category_entry_values"
+                android:prompt="@string/submit_dialog_hint_category"
+                android:spinnerMode="dropdown"
+                android:id="@+id/submitCategorySpinner"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

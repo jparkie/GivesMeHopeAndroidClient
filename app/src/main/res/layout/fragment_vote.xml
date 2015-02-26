@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/voteSwipeRefreshLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/cards_padding"
+            android:paddingRight="@dimen/cards_padding"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    card_view:cardCornerRadius="4dp"
+                    android:id="@+id/voteCardView">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/minimum_padding_unit"
+                            android:layout_marginLeft="@dimen/minimum_padding_unit"
+                            android:layout_marginRight="@dimen/minimum_padding_unit"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/voteImageView"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/cards_content_padding"
+                            android:textColor="?attr/colorAccent"
+                            android:textSize="@dimen/typography_caption"
+                            android:textStyle="italic"
+                            android:text="@+id/voteFooterTextView"
+                            android:id="@+id/voteFooterTextView" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/voteUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/vote_button_margin"
+        android:src="@mipmap/ic_thumb_up_white_24dp"
+        fab:fab_colorNormal="?attr/colorPrimary"
+        fab:fab_colorPressed="?attr/colorAccent" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/voteDownButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/vote_button_margin"
+        android:src="@mipmap/ic_thumb_down_white_24dp"
+        fab:fab_colorNormal="?attr/colorPrimary"
+        fab:fab_colorPressed="?attr/colorAccent" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/voteProgressBar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_error_white_48dp"
+        android:id="@+id/voteNetworkingErrorImageView" />
+
+</FrameLayout>

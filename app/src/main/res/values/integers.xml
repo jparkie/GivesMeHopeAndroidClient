@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <integer name="submit_dialog_max_length_name">50</integer>
+    <integer name="submit_dialog_max_length_location">50</integer>
+    <integer name="submit_dialog_max_length_title">120</integer>
+    <integer name="submit_dialog_max_length_story">300</integer>
+
+</resources>
